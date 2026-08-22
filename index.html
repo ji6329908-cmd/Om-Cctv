@@ -3,126 +3,370 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OM CCTV Repairing - CCTV Installation, Repairing, Maintenance and Service in Daurala, Meerut.">
-<title>OM CCTV Repairing | Daurala, Meerut</title>
+<meta name="description" content="OM CCTV Camera Repairing - CCTV Installation, Repairing, DVR, NVR, Wiring, Maintenance and Service in Daurala, Meerut.">
+<meta name="theme-color" content="#080808">
+<title>OM CCTV Camera Repairing | Daurala, Meerut</title>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.6}
-:root{--gold:#d9a62e;--gold2:#ffd76a;--dark:#111;--card:#171717}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.65}
+:root{--gold:#e0ad35;--gold2:#ffd76a;--dark:#0b0b0b;--card:#171717;--muted:#aaa}
 a{text-decoration:none;color:inherit}
-.nav{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.96);border-bottom:1px solid #2d2412;padding:12px 6%}
-.navin{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-size:25px;font-weight:800;letter-spacing:1px}.brand span{color:var(--gold)}
-nav a{margin-left:22px;color:#ddd;font-size:14px}nav a:hover{color:var(--gold2)}
-.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;padding:55px 6%;background:radial-gradient(circle at 50% 20%,#2a210e 0,#0b0b0b 45%,#050505 100%)}
-.hero-grid{max-width:1150px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.logo{width:min(100%,520px);display:block;margin:auto;border-radius:16px;box-shadow:0 0 35px rgba(217,166,46,.18)}
-.kicker{color:var(--gold2);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:13px}
-h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:12px 0 18px}
+img{max-width:100%}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(8,8,8,.97);border-bottom:1px solid #332713;padding:13px 5%}
+.navin{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:25px;font-weight:900;letter-spacing:1px}
+.brand span{color:var(--gold)}
+nav a{margin-left:20px;color:#ddd;font-size:14px;font-weight:700}
+nav a:hover{color:var(--gold2)}
+
+.hero{min-height:82vh;display:flex;align-items:center;padding:65px 5%;
+background:radial-gradient(circle at 70% 20%,#3a2a0c 0,#101010 38%,#050505 80%)}
+.hero-grid{max-width:1180px;width:100%;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.kicker{color:var(--gold2);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(43px,6vw,78px);line-height:1.03;margin:12px 0 18px}
 h1 span{color:var(--gold)}
-.hero p{color:#ccc;font-size:18px;max-width:560px}
+.hero p{color:#ccc;font-size:18px;max-width:620px}
 .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:700;border:1px solid var(--gold)}
-.primary{background:linear-gradient(135deg,var(--gold),#9b6b12);color:#080808}
+.btn{display:inline-block;padding:13px 21px;border-radius:9px;font-weight:800;border:1px solid var(--gold);transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(135deg,var(--gold),#9d6c13);color:#080808}
 .secondary{background:#121212;color:#fff}
-section{padding:75px 6%}.container{max-width:1150px;margin:auto}
-.title{text-align:center;margin-bottom:40px}.title h2{font-size:36px}.title p{color:#aaa;margin-top:6px}
+.green{border-color:#25d366;background:#25d366;color:#061108}
+.mapbtn{border-color:#4b8ef7;background:#18233a}
+
+.hero-logo{width:min(100%,480px);margin:auto;display:block;border-radius:18px;box-shadow:0 0 45px rgba(224,173,53,.2)}
+.logo-fallback{display:none}
+
+section{padding:78px 5%}
+.container{max-width:1180px;margin:auto}
+.title{text-align:center;margin-bottom:42px}
+.title h2{font-size:38px}
+.title p{color:#aaa;margin-top:6px}
+
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.card{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #302713;border-radius:14px;padding:28px 20px;text-align:center;transition:.25s}
-.card:hover{transform:translateY(-6px);border-color:var(--gold)}
-.icon{font-size:38px;margin-bottom:10px}.card h3{color:var(--gold2);margin-bottom:8px}.card p{color:#aaa;font-size:14px}
-.about{background:#0d0d0d}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.about-box{padding:32px;border:1px solid #302713;border-radius:16px;background:#131313}
-.about h2{font-size:38px;margin-bottom:14px}.about p{color:#bbb}
-.list{margin-top:18px}.list li{list-style:none;margin:10px 0;color:#ddd}.list li::before{content:"✓";color:var(--gold2);font-weight:bold;margin-right:10px}
-.contact{background:linear-gradient(180deg,#0b0b0b,#161108)}
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.contact-card{text-align:center;padding:28px;border:1px solid #302713;border-radius:14px;background:#111}
-.contact-card strong{display:block;color:var(--gold2);font-size:18px;margin:8px 0}.contact-card span{color:#bbb}
-.cta{text-align:center;margin-top:35px}.cta a{margin:6px}
-footer{padding:25px 6%;text-align:center;border-top:1px solid #29210f;color:#888;font-size:13px}
-.float{position:fixed;right:20px;bottom:20px;z-index:20;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 5px 20px #000}
-@media(max-width:850px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin:auto}.buttons{justify-content:center}.grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}nav{display:none}}
-@media(max-width:480px){section{padding:55px 5%}.grid{grid-template-columns:1fr}.brand{font-size:21px}.hero{padding-top:35px}h1{font-size:48px}}
+.card{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #3b301c;border-radius:15px;padding:27px 20px;text-align:center;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#806021}
+.icon{font-size:38px;margin-bottom:10px}
+.card h3{color:var(--gold2);font-size:20px;margin-bottom:8px}
+.card p{color:#bbb;font-size:14px}
+
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price{background:#111;border:1px solid #3b301c;border-radius:15px;padding:22px}
+.price h3{color:var(--gold2);margin-bottom:8px}
+.price strong{font-size:20px}
+.price p{color:#aaa;font-size:14px;margin-top:5px}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{background:#171717;border:1px solid #3b301c;border-radius:16px;padding:32px}
+.about-box h2{font-size:35px;margin:8px 0 12px}
+.about-box p{color:#ccc}
+.list{list-style:none;margin-top:18px}
+.list li{margin:10px 0;color:#ddd}
+.list li::before{content:"✓";color:var(--gold2);font-weight:900;margin-right:10px}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{background:#111;border:1px solid #3b301c;border-radius:15px;overflow:hidden}
+.gallery img{width:100%;height:235px;object-fit:cover;display:block}
+.gallery figcaption{padding:13px 15px;color:#ccc;font-weight:700}
+
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.info{background:#111;border:1px solid #3b301c;border-radius:15px;padding:22px;text-align:center}
+.info .icon{font-size:30px}
+.info strong{display:block;color:var(--gold2);font-size:17px;margin:6px 0}
+.info span{color:#bbb;font-size:14px}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{background:#141414;border:1px solid #3b301c;border-radius:15px;padding:24px}
+.stars{color:#ffd34f;letter-spacing:2px;font-size:18px}
+.review p{color:#ccc;margin:10px 0}
+.review small{color:#888}
+
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-box,.map-box{background:#111;border:1px solid #3b301c;border-radius:16px;padding:28px}
+.contact-box h3,.map-box h3{color:var(--gold2);font-size:25px;margin-bottom:14px}
+.contact-line{padding:11px 0;border-bottom:1px solid #292929;color:#ccc}
+.contact-line b{color:#fff}
+.map-frame{width:100%;height:300px;border:0;border-radius:12px;margin-top:12px}
+.contact-buttons{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+
+.note{color:#888;font-size:12px;margin-top:12px}
+footer{padding:28px 5%;text-align:center;border-top:1px solid #29210f;color:#888;font-size:13px}
+.float{position:fixed;right:20px;bottom:20px;z-index:60;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 5px 20px #000}
+
+@media(max-width:900px){
+.hero-grid,.about-grid,.contact-wrap{grid-template-columns:1fr}
+.hero{text-align:center}
+.hero p{margin:auto}
+.buttons{justify-content:center}
+.grid{grid-template-columns:repeat(2,1fr)}
+.price-grid,.reviews{grid-template-columns:1fr 1fr}
+.info-grid{grid-template-columns:repeat(2,1fr)}
+nav{display:none}
+}
+
+@media(max-width:560px){
+section{padding:58px 5%}
+.grid,.price-grid,.reviews,.gallery,.info-grid{grid-template-columns:1fr}
+.brand{font-size:21px}
+.hero{padding-top:42px}
+h1{font-size:48px}
+.gallery img{height:210px}
+}
 </style>
 </head>
+
 <body>
 
 <header class="nav">
-  <div class="navin">
-    <div class="brand"><span>OM</span> CCTV</div>
-    <nav>
-      <a href="#home">Home</a><a href="#services">Services</a>
-      <a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
+<div class="navin">
+<div class="brand"><span>OM</span> CCTV</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#prices">Price List</a>
+<a href="#gallery">Cameras</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
 <main>
+
 <section class="hero" id="home">
-  <div class="hero-grid">
-    <div>
-      <div class="kicker">Security • Installation • Service</div>
-      <h1>OM <span>CCTV</span><br>Repairing</h1>
-      <p>Professional CCTV installation, repairing, maintenance and service in Daurala, Meerut.</p>
-      <div class="buttons">
-        <a class="btn primary" href="tel:+917060727266">📞 Call Now</a>
-        <a class="btn secondary" href="https://wa.me/917060727266" target="_blank">💬 WhatsApp</a>
-      </div>
-    </div>
-    <img class="logo" src="om-cctv-logo.png" alt="OM CCTV Repairing Logo">
-  </div>
+<div class="hero-grid">
+<div>
+<div class="kicker">Security • Installation • Repair • Service</div>
+<h1>OM <span>CCTV</span><br>Camera Repairing</h1>
+<p>Professional CCTV installation, repairing, DVR, NVR, wiring, maintenance and service in Daurala, Meerut.</p>
+
+<div class="buttons">
+<a class="btn primary" href="tel:+917060727266">📞 Call Now</a>
+<a class="btn green" href="https://wa.me/917060727266?text=Hello%20OM%20CCTV%2C%20mujhe%20CCTV%20service%20chahiye." target="_blank">💬 WhatsApp</a>
+<a class="btn mapbtn" href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut" target="_blank">📍 Google Maps</a>
+</div>
+</div>
+
+<img class="hero-logo" src="om-cctv-logo.png" alt="OM CCTV Camera Repairing Logo">
+</div>
 </section>
 
 <section id="services">
-  <div class="container">
-    <div class="title"><h2>Our Services</h2><p>Complete CCTV security solutions</p></div>
-    <div class="grid">
-      <div class="card"><div class="icon">📹</div><h3>CCTV Installation</h3><p>Home, shop, office and commercial CCTV installation.</p></div>
-      <div class="card"><div class="icon">🔧</div><h3>CCTV Repairing</h3><p>Camera, DVR, wiring and power-related troubleshooting.</p></div>
-      <div class="card"><div class="icon">🛠️</div><h3>Maintenance</h3><p>Regular checking and maintenance for reliable security.</p></div>
-      <div class="card"><div class="icon">🖥️</div><h3>Service</h3><p>DVR setup, camera configuration and system support.</p></div>
-    </div>
-  </div>
+<div class="container">
+<div class="title">
+<h2>Our Services</h2>
+<p>Complete CCTV security solutions</p>
+</div>
+
+<div class="grid">
+<div class="card"><div class="icon">📹</div><h3>CCTV Installation</h3><p>Home, shop, office and commercial CCTV installation.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>CCTV Repairing</h3><p>Camera, DVR, power, display and connection troubleshooting.</p></div>
+<div class="card"><div class="icon">🖥️</div><h3>DVR / NVR</h3><p>DVR/NVR setup, configuration, recording and remote-view support.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>Wiring & Setup</h3><p>Camera wiring, connectors, power supply and complete system setup.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Maintenance</h3><p>Regular checking, cleaning and maintenance for reliable security.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Remote View</h3><p>Mobile app configuration and remote CCTV viewing support.</p></div>
+<div class="card"><div class="icon">💾</div><h3>Recording Support</h3><p>Hard-disk, recording and playback related troubleshooting.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Power Issues</h3><p>SMPS, adapter and camera power-related checking and repair.</p></div>
+</div>
+</div>
 </section>
 
-<section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-box">
-      <div class="kicker">Why OM CCTV?</div>
-      <h2>Security You Can Trust</h2>
-      <p>OM CCTV Repairing provides practical CCTV solutions with installation, repair and maintenance support.</p>
-      <ul class="list">
-        <li>Professional CCTV Installation</li>
-        <li>CCTV & DVR Repairing</li>
-        <li>Camera Wiring & Setup</li>
-        <li>Maintenance & Service</li>
-      </ul>
-    </div>
-    <div>
-      <img class="logo" src="om-cctv-logo.png" alt="OM CCTV">
-    </div>
-  </div>
+<section id="prices">
+<div class="container">
+<div class="title">
+<h2>💰 Rate List</h2>
+<p>Apne actual rates neeche ₹ ke saamne khud bhar sakte hain</p>
+</div>
+
+<div class="price-grid">
+
+<div class="price"><h3>📹 CCTV Camera</h3><strong>₹ ______</strong><p>Per Camera</p></div>
+
+<div class="price"><h3>📶 Wi-Fi Camera</h3><strong>₹ ______</strong><p>Per Camera</p></div>
+
+<div class="price"><h3>🖥️ DVR</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🌐 NVR / PoE</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🔌 PoE Switch</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🔗 HDMI Cable</h3><strong>₹ ______</strong><p>Per Cable</p></div>
+
+<div class="price"><h3>💾 HDD</h3><strong>₹ ______</strong><p>Per HDD</p></div>
+
+<div class="price"><h3>🖱️ Mouse</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>⌨️ Keyboard</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>📺 LED TV / Monitor</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🛠️ Installation</h3><strong>₹ ______</strong><p>Per Camera / Site</p></div>
+
+<div class="price"><h3>🔧 Repairing</h3><strong>₹ ______</strong><p>As per work</p></div>
+
+<div class="price"><h3>🧵 CCTV Wiring</h3><strong>₹ ______</strong><p>Per Meter</p></div>
+
+<div class="price"><h3>📱 Mobile Setup</h3><strong>₹ ______</strong><p>Per Setup</p></div>
+
+<div class="price"><h3>🛠️ Maintenance</h3><strong>₹ ______</strong><p>Per Visit / Package</p></div>
+
+</div>
+
+<p class="note">Note: Ye rate fields aap apne hisaab se update kar sakte hain.</p>
+</div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="title"><h2>Contact OM CCTV</h2><p>For installation, repairing and service</p></div>
-    <div class="contact-grid">
-      <div class="contact-card"><div class="icon">📞</div><strong>Mobile</strong><span>7060727266</span></div>
-      <div class="contact-card"><div class="icon">📍</div><strong>Location</strong><span>Daurala, Meerut, Uttar Pradesh</span></div>
-      <div class="contact-card"><div class="icon">🕒</div><strong>Service</strong><span>CCTV Installation & Repairing</span></div>
-    </div>
-    <div class="cta">
-      <a class="btn primary" href="tel:+917060727266">Call 7060727266</a>
-      <a class="btn secondary" href="https://wa.me/917060727266?text=Hello%20OM%20CCTV%2C%20mujhe%20CCTV%20service%20chahiye." target="_blank">WhatsApp Us</a>
-    </div>
-  </div>
+<section id="gallery">
+<div class="container">
+<div class="title">
+<h2>CCTV Camera Gallery</h2>
+<p>Security camera examples</p>
+</div>
+
+<div class="gallery">
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV.jpg" alt="CCTV security camera">
+<figcaption>Outdoor CCTV Camera</figcaption>
+</figure>
+
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV%20Security%20cameras.jpg" alt="CCTV security cameras">
+<figcaption>CCTV Security Cameras</figcaption>
+</figure>
+
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV%20Cameras.png" alt="Different types of CCTV cameras">
+<figcaption>Different Camera Types</figcaption>
+</figure>
+</div>
+</div>
 </section>
+
+<section id="about">
+<div class="container about-grid">
+
+<div class="about-box">
+<div class="kicker">Why OM CCTV?</div>
+<h2>Security You Can Trust</h2>
+<p>OM CCTV Camera Repairing provides practical CCTV solutions for homes, shops, offices and commercial locations in and around Daurala, Meerut.</p>
+
+<ul class="list">
+<li>Professional CCTV Installation</li>
+<li>CCTV Camera & DVR/NVR Repairing</li>
+<li>Camera Wiring & Complete Setup</li>
+<li>Maintenance & Service Support</li>
+<li>Mobile Remote Viewing Setup</li>
+</ul>
+</div>
+
+<div class="about-box">
+<div class="kicker">Business Information</div>
+<h2>OM CCTV Camera Repairing</h2>
+<p><b>Location:</b> Daurala, Meerut, Uttar Pradesh</p>
+<p><b>Phone:</b> 7060727266</p>
+<p><b>Services:</b> CCTV Installation, Repairing, DVR, NVR, Wiring & Maintenance</p>
+
+<div class="contact-buttons">
+<a class="btn primary" href="tel:+917060727266">📞 Call</a>
+<a class="btn green" href="https://wa.me/917060727266" target="_blank">💬 WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="hours">
+<div class="container">
+
+<div class="title">
+<h2>Business Information</h2>
+<p>Quick details for customers</p>
+</div>
+
+<div class="info-grid">
+<div class="info"><div class="icon">📞</div><strong>Mobile</strong><span>7060727266</span></div>
+<div class="info"><div class="icon">📍</div><strong>Location</strong><span>Daurala, Meerut</span></div>
+<div class="info"><div class="icon">🕐</div><strong>Service Hours</strong><span>9:00 AM – 8:00 PM</span></div>
+<div class="info"><div class="icon">🛠️</div><strong>Service</strong><span>Installation & Repairing</span></div>
+</div>
+
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+
+<div class="title">
+<h2>Customer Reviews</h2>
+<p>Google par customer feedback dekhein</p>
+</div>
+
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p>“CCTV installation aur service ke liye apna genuine customer review yahan add karein.”</p><small>Customer Review</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Aapke Google Business Profile ke real reviews ko yahan feature kiya ja sakta hai.”</p><small>Customer Review</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Real reviews use karna best hai—fake review website par nahi dikhaya gaya.”</p><small>Customer Review</small></div>
+</div>
+
+<div style="text-align:center;margin-top:25px">
+<a class="btn mapbtn" href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut" target="_blank">⭐ View Google Business / Maps</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+
+<div class="title">
+<h2>Contact OM CCTV</h2>
+<p>Installation, repairing, DVR/NVR and service</p>
+</div>
+
+<div class="contact-wrap">
+
+<div class="contact-box">
+<h3>Get in Touch</h3>
+
+<div class="contact-line">📞 <b>Mobile:</b> 7060727266</div>
+<div class="contact-line">📍 <b>Address:</b> Daurala, Meerut, Uttar Pradesh</div>
+<div class="contact-line">🕐 <b>Timing:</b> 9:00 AM – 8:00 PM</div>
+<div class="contact-line">🛠️ <b>Work:</b> CCTV Installation, Repairing, DVR, NVR, Wiring & Maintenance</div>
+
+<div class="contact-buttons">
+<a class="btn primary" href="tel:+917060727266">📞 Call 7060727266</a>
+<a class="btn green" href="https://wa.me/917060727266?text=Hello%20OM%20CCTV%2C%20mujhe%20CCTV%20service%20chahiye." target="_blank">💬 WhatsApp</a>
+<a class="btn mapbtn" href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut" target="_blank">🗺️ Directions</a>
+</div>
+</div>
+
+<div class="map-box">
+<h3>📍 Find Us on Google Maps</h3>
+<p style="color:#aaa">OM CCTV Camera Repairing, Daurala, Meerut</p>
+
+<iframe
+class="map-frame"
+src="https://www.google.com/maps?q=OM%20CCTV%20Camera%20Repairing%20Daurala%20Meerut&output=embed"
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+</div>
+
+</div>
+</section>
+
 </main>
 
-<footer>© 2026 OM CCTV Repairing • Daurala, Meerut</footer>
+<footer>
+© 2026 OM CCTV Camera Repairing • Daurala, Meerut • CCTV Installation, Repairing & Service
+</footer>
+
 <a class="float" href="https://wa.me/917060727266" target="_blank" aria-label="WhatsApp">💬</a>
 
 </body>
