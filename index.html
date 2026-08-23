@@ -1135,7 +1135,26 @@ target="_blank">
 placeholder="Installation, repairing, price ya package ke baare mein batayein..."></textarea>
 
 </div>
+<div class="form-group form-full">
 
+<label>📍 Customer Address / Location</label>
+
+<textarea id="address"
+placeholder="Apna poora address likhein...&#10;Jaise: Daurala, Meerut"></textarea>
+
+<button type="button"
+class="btn mapbtn"
+style="width:100%;margin-top:10px"
+onclick="getLocation()">
+📍 Send My Current Location
+</button>
+
+<p id="locationStatus"
+style="color:#aaa;margin-top:8px;text-align:center">
+Location share nahi ki gayi
+</p>
+
+</div>
 </div>
 
 <button class="btn green"
@@ -1363,6 +1382,7 @@ let mobile = document.getElementById("mobile").value.trim();
 let quantity = document.getElementById("quantity").value;
 let type = document.getElementById("type").value;
 let message = document.getElementById("message").value.trim();
+let address = document.getElementById("address").value.trim();
 
 if(name === ""){
 alert("Please apna naam enter karein.");
@@ -1374,14 +1394,37 @@ alert("Please mobile number enter karein.");
 return;
 }
 
+if(type === ""){
+alert("Please Camera Type / Service select karein.");
+return;
+}
+
 let text =
 "Namaste 🙏 OM CCTV,%0A%0A" +
 "Mujhe CCTV ke baare mein enquiry karni hai.%0A%0A" +
 "👤 Name: " + encodeURIComponent(name) + "%0A" +
 "📞 Mobile: " + encodeURIComponent(mobile) + "%0A" +
-"📹 Quantity: " + encodeURIComponent(quantity || "Not selected") + "%0A" +
-"📷 Camera Type: " + encodeURIComponent(type || "Not selected") + "%0A" +
-"📝 Requirement: " + encodeURIComponent(message || "Price aur details chahiye.") + "%0A%0A" +
+"📹 Camera Quantity: " + encodeURIComponent(quantity || "Not selected") + "%0A" +
+"📷 Camera Type / Service: " + encodeURIComponent(type) + "%0A" +
+"📍 Customer Address: " + encodeURIComponent(address || "Address nahi diya") + "%0A";
+
+if(customerLocation !== ""){
+
+text +=
+"🗺️ Google Maps Location:%0A" +
+encodeURIComponent(customerLocation) + "%0A";
+
+}else{
+
+text +=
+"🗺️ Google Maps Location: Not shared%0A";
+
+}
+
+text +=
+"📝 Requirement: " +
+encodeURIComponent(message || "Price aur details chahiye.") +
+"%0A%0A" +
 "Please mujhe price aur details bataiye.";
 
 window.open(
