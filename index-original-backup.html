@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="OM CCTV Camera Repairing - CCTV Installation, Repairing, DVR, NVR, WiFi Camera, PoE, Wiring and Maintenance in Daurala, Meerut.">
+
+<meta name="theme-color" content="#080808">
+
+<title>OM CCTV Camera Repairing | Daurala, Meerut</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#080808;
+color:#fff;
+line-height:1.65
+}
+
+:root{
+--gold:#e0ad35;
+--gold2:#ffd76a;
+--dark:#0b0b0b;
+--card:#171717;
+--muted:#aaa
+}
+
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+
+/* NAV */
+.nav{
+position:sticky;
+top:0;
+z-index:50;
+background:rgba(8,8,8,.97);
+border-bottom:1px solid #332713;
+padding:13px 5%
+}
+
+.navin{
+max-width:1180px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.brand{
+font-size:25px;
+font-weight:900;
+letter-spacing:1px
+}
+
+.brand span{color:var(--gold)}
+
+nav a{
+margin-left:20px;
+color:#ddd;
+font-size:14px;
+font-weight:700
+}
+
+nav a:hover{color:var(--gold2)}
+
+/* HERO */
+.hero{
+min-height:82vh;
+display:flex;
+align-items:center;
+padding:65px 5%;
+background:radial-gradient(circle at 70% 20%,#3a2a0c 0,#101010 38%,#050505 80%)
+}
+
+.hero-grid{
+max-width:1180px;
+width:100%;
+margin:auto;
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:50px;
+align-items:center
+}
+
+.kicker{
+color:var(--gold2);
+font-weight:800;
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:13px
+}
+
+h1{
+font-size:clamp(43px,6vw,78px);
+line-height:1.03;
+margin:12px 0 18px
+}
+
+h1 span{color:var(--gold)}
+
+.hero p{
+color:#ccc;
+font-size:18px;
+max-width:620px
+}
+
+.buttons{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:28px
+}
+
+.btn{
+display:inline-block;
+padding:13px 21px;
+border-radius:9px;
+font-weight:800;
+border:1px solid var(--gold);
+transition:.2s;
+cursor:pointer
+}
+
+.btn:hover{transform:translateY(-2px)}
+
+.primary{
+background:linear-gradient(135deg,var(--gold),#9d6c13);
+color:#080808
+}
+
+.secondary{
+background:#121212;
+color:#fff
+}
+
+.green{
+border-color:#25d366;
+background:#25d366;
+color:#061108
+}
+
+.mapbtn{
+border-color:#4b8ef7;
+background:#18233a
+}
+
+.hero-logo{
+width:min(100%,480px);
+margin:auto;
+display:block;
+border-radius:18px;
+box-shadow:0 0 45px rgba(224,173,53,.2)
+}
+
+/* COMMON */
+section{padding:78px 5%}
+
+.container{
+max-width:1180px;
+margin:auto
+}
+
+.title{
+text-align:center;
+margin-bottom:42px
+}
+
+.title h2{font-size:38px}
+
+.title p{
+color:#aaa;
+margin-top:6px
+}
+
+/* SERVICES */
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
+}
+
+.card{
+background:linear-gradient(145deg,#1b1b1b,#101010);
+border:1px solid #3b301c;
+border-radius:15px;
+padding:27px 20px;
+text-align:center;
+transition:.25s
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#806021
+}
+
+.icon{
+font-size:38px;
+margin-bottom:10px
+}
+
+.card h3{
+color:var(--gold2);
+font-size:20px;
+margin-bottom:8px
+}
+
+.card p{
+color:#bbb;
+font-size:14px
+}
+
+/* PRICE */
+.price-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.price{
+background:#111;
+border:1px solid #3b301c;
+border-radius:15px;
+padding:22px
+}
+
+.price h3{
+color:var(--gold2);
+margin-bottom:8px
+}
+
+.price strong{font-size:20px}
+
+.price p{
+color:#aaa;
+font-size:14px;
+margin-top:5px
+}
+
+/* PACKAGES */
+.package-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
+}
+
+.package{
+background:linear-gradient(145deg,#191919,#0e0e0e);
+border:1px solid #5a431c;
+border-radius:17px;
+padding:25px 20px;
+text-align:center;
+position:relative;
+transition:.25s
+}
+
+.package:hover{
+transform:translateY(-6px);
+border-color:var(--gold)
+}
+
+.package h3{
+font-size:24px;
+color:var(--gold2);
+margin-bottom:8px
+}
+
+.package .camera{
+font-size:35px;
+margin:10px 0
+}
+
+.package .package-price{
+font-size:27px;
+font-weight:900;
+margin:12px 0;
+color:#fff
+}
+
+.package ul{
+list-style:none;
+text-align:left;
+margin:15px 0
+}
+
+.package li{
+color:#ccc;
+padding:5px 0;
+font-size:14px
+}
+
+.package li::before{
+content:"✓";
+color:var(--gold2);
+font-weight:bold;
+margin-right:8px
+}
+
+.package .btn{
+padding:10px 15px;
+font-size:14px
+}
+
+/* ABOUT */
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+align-items:center
+}
+
+.about-box{
+background:#171717;
+border:1px solid #3b301c;
+border-radius:16px;
+padding:32px
+}
+
+.about-box h2{
+font-size:35px;
+margin:8px 0 12px
+}
+
+.about-box p{color:#ccc}
+
+.list{
+list-style:none;
+margin-top:18px
+}
+
+.list li{
+margin:10px 0;
+color:#ddd
+}
+
+.list li::before{
+content:"✓";
+color:var(--gold2);
+font-weight:900;
+margin-right:10px
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.gallery figure{
+background:#111;
+border:1px solid #3b301c;
+border-radius:15px;
+overflow:hidden
+}
+
+.gallery img{
+width:100%;
+height:235px;
+object-fit:cover;
+display:block
+}
+
+.gallery figcaption{
+padding:13px 15px;
+color:#ccc;
+font-weight:700
+}
+
+/* INFO */
+.info-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
+}
+
+.info{
+background:#111;
+border:1px solid #3b301c;
+border-radius:15px;
+padding:22px;
+text-align:center
+}
+
+.info .icon{font-size:30px}
+
+.info strong{
+display:block;
+color:var(--gold2);
+font-size:17px;
+margin:6px 0
+}
+
+.info span{
+color:#bbb;
+font-size:14px
+}
+
+/* REVIEWS */
+.reviews{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.review{
+background:#141414;
+border:1px solid #3b301c;
+border-radius:15px;
+padding:24px
+}
+
+.stars{
+color:#ffd34f;
+letter-spacing:2px;
+font-size:18px
+}
+
+.review p{
+color:#ccc;
+margin:10px 0
+}
+
+.review small{color:#888}
+
+/* FAQ */
+.faq{
+max-width:900px;
+margin:auto
+}
+
+.faq details{
+background:#141414;
+border:1px solid #3b301c;
+border-radius:12px;
+margin-bottom:12px;
+padding:0 18px
+}
+
+.faq summary{
+cursor:pointer;
+padding:17px 5px;
+font-weight:800;
+color:var(--gold2)
+}
+
+.faq p{
+color:#bbb;
+padding:0 5px 18px
+}
+
+/* ENQUIRY */
+.enquiry{
+max-width:850px;
+margin:auto;
+background:#111;
+border:1px solid #3b301c;
+border-radius:18px;
+padding:30px
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px
+}
+
+.form-group{
+margin-bottom:15px
+}
+
+.form-group label{
+display:block;
+color:#ddd;
+font-weight:bold;
+margin-bottom:6px
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+width:100%;
+background:#191919;
+border:1px solid #3b301c;
+color:#fff;
+padding:13px;
+border-radius:8px;
+outline:none
+}
+
+.form-group textarea{
+min-height:110px;
+resize:vertical
+}
+
+.form-full{
+grid-column:1/-1
+}
+
+/* CONTACT */
+.contact-wrap{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px
+}
+
+.contact-box,.map-box{
+background:#111;
+border:1px solid #3b301c;
+border-radius:16px;
+padding:28px
+}
+
+.contact-box h3,.map-box h3{
+color:var(--gold2);
+font-size:25px;
+margin-bottom:14px
+}
+
+.contact-line{
+padding:11px 0;
+border-bottom:1px solid #292929;
+color:#ccc
+}
+
+.contact-line b{color:#fff}
+
+.map-frame{
+width:100%;
+height:300px;
+border:0;
+border-radius:12px;
+margin-top:12px
+}
+
+.contact-buttons{
+margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+gap:10px
+}
+
+.note{
+color:#888;
+font-size:12px;
+margin-top:12px
+}
+
+footer{
+padding:28px 5%;
+text-align:center;
+border-top:1px solid #29210f;
+color:#888;
+font-size:13px
+}
+
+/* FLOATING WHATSAPP */
+.float{
+position:fixed;
+right:20px;
+bottom:20px;
+z-index:60;
+background:#25d366;
+color:#fff;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:27px;
+box-shadow:0 5px 20px #000
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.hero-grid,
+.about-grid,
+.contact-wrap{
+grid-template-columns:1fr
+}
+
+.hero{text-align:center}
+
+.hero p{margin:auto}
+
+.buttons{justify-content:center}
+
+.grid{grid-template-columns:repeat(2,1fr)}
+
+.price-grid,
+.reviews{
+grid-template-columns:1fr 1fr
+}
+
+.package-grid{
+grid-template-columns:1fr 1fr
+}
+
+.info-grid{
+grid-template-columns:repeat(2,1fr)
+}
+
+nav{display:none}
+}
+
+@media(max-width:560px){
+
+section{padding:58px 5%}
+
+.grid,
+.price-grid,
+.reviews,
+.gallery,
+.info-grid,
+.package-grid{
+grid-template-columns:1fr
+}
+
+.form-grid{
+grid-template-columns:1fr
+}
+
+.form-full{
+grid-column:auto
+}
+
+.brand{font-size:21px}
+
+.hero{padding-top:42px}
+
+h1{font-size:48px}
+
+.gallery img{height:210px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+<div class="navin">
+
+<div class="brand"><span>OM</span> CCTV</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#prices">Price</a>
+<a href="#packages">Packages</a>
+<a href="#gallery">Cameras</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="kicker">
+Security • Installation • Repair • Service
+</div>
+
+<h1>
+OM <span>CCTV</span><br>
+Camera Repairing
+</h1>
+
+<p>
+Professional CCTV installation, repairing, DVR, NVR, WiFi Camera, PoE, wiring, maintenance and service in Daurala, Meerut.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="tel:+917060727266">
+📞 Call Now
+</a>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%20CCTV%20Camera%20ki%20Price%20aur%20Details%20chahiye."
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="btn mapbtn"
+href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut"
+target="_blank">
+📍 Google Maps
+</a>
+
+</div>
+
+</div>
+
+<img class="hero-logo"
+src="om-cctv-logo.png"
+alt="OM CCTV Camera Repairing Logo">
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+<div class="container">
+
+<div class="title">
+<h2>Our Services</h2>
+<p>Complete CCTV security solutions</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">📹</div>
+<h3>CCTV Installation</h3>
+<p>Home, shop, office and commercial CCTV installation.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>CCTV Repairing</h3>
+<p>Camera, DVR, power, display and connection troubleshooting.</p>
+</div>
+
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>DVR / NVR</h3>
+<p>DVR/NVR setup, configuration, recording and remote-view support.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔌</div>
+<h3>Wiring & Setup</h3>
+<p>Camera wiring, connectors, power supply and complete system setup.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛠️</div>
+<h3>Maintenance</h3>
+<p>Regular checking, cleaning and maintenance for reliable security.</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>Remote View</h3>
+<p>Mobile app configuration and remote CCTV viewing support.</p>
+</div>
+
+<div class="card">
+<div class="icon">💾</div>
+<h3>Recording Support</h3>
+<p>Hard-disk, recording and playback related troubleshooting.</p>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Power Issues</h3>
+<p>SMPS, adapter and camera power-related checking and repair.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- RATE LIST -->
+<section id="prices">
+
+<div class="container">
+
+<div class="title">
+<h2>💰 Rate List</h2>
+<p>Apne actual rates ₹ ke saamne khud bhar sakte hain</p>
+</div>
+
+<div class="price-grid">
+
+<div class="price"><h3>📹 CCTV Camera</h3><strong>₹ ______</strong><p>Per Camera</p></div>
+
+<div class="price"><h3>📶 Wi-Fi Camera</h3><strong>₹ ______</strong><p>Per Camera</p></div>
+
+<div class="price"><h3>🖥️ DVR</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🌐 NVR / PoE</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🔌 PoE Switch</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🔗 HDMI Cable</h3><strong>₹ ______</strong><p>Per Cable</p></div>
+
+<div class="price"><h3>💾 HDD</h3><strong>₹ ______</strong><p>Per HDD</p></div>
+
+<div class="price"><h3>🖱️ Mouse</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>⌨️ Keyboard</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>📺 LED TV / Monitor</h3><strong>₹ ______</strong><p>Per Unit</p></div>
+
+<div class="price"><h3>🛠️ Installation</h3><strong>₹ ______</strong><p>Per Camera / Site</p></div>
+
+<div class="price"><h3>🔧 Repairing</h3><strong>₹ ______</strong><p>As per work</p></div>
+
+<div class="price"><h3>🧵 CCTV Wiring</h3><strong>₹ ______</strong><p>Per Meter</p></div>
+
+<div class="price"><h3>📱 Mobile Setup</h3><strong>₹ ______</strong><p>Per Setup</p></div>
+
+<div class="price"><h3>🛠️ Maintenance</h3><strong>₹ ______</strong><p>Per Visit / Package</p></div>
+
+</div>
+
+<p class="note">
+Note: Ye rate fields aap apne hisaab se update kar sakte hain.
+</p>
+
+</div>
+</section>
+
+
+<!-- PACKAGES -->
+<section id="packages">
+
+<div class="container">
+
+<div class="title">
+<h2>📦 CCTV Packages</h2>
+<p>Apne customer ke hisaab se package select karein</p>
+</div>
+
+<div class="package-grid">
+
+<div class="package">
+
+<h3>2 Camera</h3>
+<div class="camera">📹📹</div>
+
+<div class="package-price">₹ ______</div>
+
+<ul>
+<li>2 CCTV Camera</li>
+<li>DVR / NVR</li>
+<li>HDD</li>
+<li>Power Supply</li>
+<li>Wiring</li>
+<li>Installation</li>
+</ul>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%202%20Camera%20CCTV%20Package%20ki%20Price%20chahiye."
+target="_blank">
+Get Quote
+</a>
+
+</div>
+
+
+<div class="package">
+
+<h3>4 Camera</h3>
+<div class="camera">📹📹📹📹</div>
+
+<div class="package-price">₹ ______</div>
+
+<ul>
+<li>4 CCTV Camera</li>
+<li>DVR / NVR</li>
+<li>HDD</li>
+<li>Power Supply</li>
+<li>Wiring</li>
+<li>Installation</li>
+</ul>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%204%20Camera%20CCTV%20Package%20ki%20Price%20chahiye."
+target="_blank">
+Get Quote
+</a>
+
+</div>
+
+
+<div class="package">
+
+<h3>8 Camera</h3>
+<div class="camera">📹📹📹📹</div>
+
+<div class="package-price">₹ ______</div>
+
+<ul>
+<li>8 CCTV Camera</li>
+<li>DVR / NVR</li>
+<li>HDD</li>
+<li>Power Supply</li>
+<li>Wiring</li>
+<li>Installation</li>
+</ul>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%208%20Camera%20CCTV%20Package%20ki%20Price%20chahiye."
+target="_blank">
+Get Quote
+</a>
+
+</div>
+
+
+<div class="package">
+
+<h3>16 Camera</h3>
+<div class="camera">📹📹📹📹</div>
+
+<div class="package-price">₹ ______</div>
+
+<ul>
+<li>16 CCTV Camera</li>
+<li>NVR / DVR</li>
+<li>HDD</li>
+<li>PoE / Switch</li>
+<li>Wiring</li>
+<li>Installation</li>
+</ul>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%2016%20Camera%20CCTV%20Package%20ki%20Price%20chahiye."
+target="_blank">
+Get Quote
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+<div class="container">
+
+<div class="title">
+<h2>CCTV Camera Gallery</h2>
+<p>Security camera examples</p>
+</div>
+
+<div class="gallery">
+
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV.jpg" alt="CCTV security camera">
+<figcaption>Outdoor CCTV Camera</figcaption>
+</figure>
+
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV%20Security%20cameras.jpg" alt="CCTV security cameras">
+<figcaption>CCTV Security Cameras</figcaption>
+</figure>
+
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CCTV%20Cameras.png" alt="Different types of CCTV cameras">
+<figcaption>Different Camera Types</figcaption>
+</figure>
+
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<div class="container about-grid">
+
+<div class="about-box">
+
+<div class="kicker">Why OM CCTV?</div>
+
+<h2>Security You Can Trust</h2>
+
+<p>
+OM CCTV Camera Repairing provides practical CCTV solutions for homes, shops, offices and commercial locations in and around Daurala, Meerut.
+</p>
+
+<ul class="list">
+<li>Professional CCTV Installation</li>
+<li>CCTV Camera & DVR/NVR Repairing</li>
+<li>Camera Wiring & Complete Setup</li>
+<li>Maintenance & Service Support</li>
+<li>Mobile Remote Viewing Setup</li>
+</ul>
+
+</div>
+
+
+<div class="about-box">
+
+<div class="kicker">Business Information</div>
+
+<h2>OM CCTV Camera Repairing</h2>
+
+<p><b>Location:</b> Daurala, Meerut, Uttar Pradesh</p>
+<p><b>Phone:</b> 7060727266</p>
+<p><b>Services:</b> CCTV Installation, Repairing, DVR, NVR, Wiring & Maintenance</p>
+
+<div class="contact-buttons">
+
+<a class="btn primary" href="tel:+917060727266">
+📞 Call
+</a>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%20CCTV%20Camera%20ki%20Price%20aur%20Details%20chahiye."
+target="_blank">
+💬 WhatsApp
+</a>
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- BUSINESS INFO -->
+<section id="hours">
+
+<div class="container">
+
+<div class="title">
+<h2>Business Information</h2>
+<p>Quick details for customers</p>
+</div>
+
+<div class="info-grid">
+
+<div class="info">
+<div class="icon">📞</div>
+<strong>Mobile</strong>
+<span>7060727266</span>
+</div>
+
+<div class="info">
+<div class="icon">📍</div>
+<strong>Location</strong>
+<span>Daurala, Meerut</span>
+</div>
+
+<div class="info">
+<div class="icon">🕐</div>
+<strong>Service Hours</strong>
+<span>9:00 AM – 8:00 PM</span>
+</div>
+
+<div class="info">
+<div class="icon">🛠️</div>
+<strong>Service</strong>
+<span>Installation & Repairing</span>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ENQUIRY FORM -->
+<section id="enquiry">
+
+<div class="container">
+
+<div class="title">
+<h2>📝 Get a Free Quote</h2>
+<p>Apni requirement bhejiye, WhatsApp par enquiry karein</p>
+</div>
+
+<div class="enquiry">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Your Name</label>
+<input type="text" id="name" placeholder="Apna naam">
+</div>
+
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="tel" id="mobile" placeholder="Mobile number">
+</div>
+
+<div class="form-group">
+<label>Camera Quantity</label>
+
+<select id="quantity">
+<option value="">Select Quantity</option>
+<option>4 Camera</option>
+<option>8 Camera</option>
+<option>16 Camera</option>
+<option>20+ Camera</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Camera Type</label>
+
+<select id="type">
+<option value="">Select Camera Type</option>
+<option>IP Camera</option>
+<option>HD Camera</option>
+<option>Wi-Fi Camera</option>
+<option>4G Camera</option>
+<option>PTZ Camera</option>
+<option>Repairing</option>
+<option>DVR / NVR Repairing</option>
+</select>
+
+</div>
+
+<div class="form-group form-full">
+
+<label>Your Requirement</label>
+
+<textarea id="message"
+placeholder="Installation, repairing, price ya package ke baare mein batayein..."></textarea>
+
+</div>
+<div class="form-group form-full">
+
+<label>📍 Customer Address / Location</label>
+
+<textarea id="address"
+placeholder="Apna poora address likhein...&#10;Jaise: Daurala, Meerut"></textarea>
+
+<button type="button"
+class="btn mapbtn"
+style="width:100%;margin-top:10px"
+onclick="getLocation()">
+📍 Send My Current Location
+</button>
+
+<p id="locationStatus"
+style="color:#aaa;margin-top:8px;text-align:center">
+
+</p>
+
+</div>
+</div>
+
+<button class="btn green"
+style="border:0;width:100%;margin-top:5px"
+onclick="sendEnquiry()">
+💬 Send Enquiry on WhatsApp
+</button>
+
+</div>
+</div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq">
+
+<div class="container">
+
+<div class="title">
+<h2>❓ Frequently Asked Questions</h2>
+<p>Customers ke common questions</p>
+</div>
+
+<div class="faq">
+
+<details>
+<summary>CCTV installation ka charge kitna hai?</summary>
+<p>
+Installation ka charge camera quantity, wiring aur site ke work ke according hota hai. Exact rate ke liye WhatsApp par enquiry karein.
+</p>
+</details>
+
+<details>
+<summary>Kya Wi-Fi CCTV Camera available hai?</summary>
+<p>
+Haan, Wi-Fi cameras available hain. Model aur requirement ke according price alag ho sakta hai.
+</p>
+</details>
+
+<details>
+<summary>Kya CCTV mobile me dekh sakte hain?</summary>
+<p>
+Haan, compatible DVR/NVR/Wi-Fi camera ko mobile app ke through remote viewing ke liye setup kiya ja sakta hai.
+</p>
+</details>
+
+<details>
+<summary>HDD bhi available hai?</summary>
+<p>
+Haan, CCTV recording ke liye HDD available hai. Capacity requirement ke according choose ki ja sakti hai.
+</p>
+</details>
+
+<details>
+<summary>DVR / NVR repairing hoti hai?</summary>
+<p>
+Haan, DVR/NVR, camera, power supply, display aur connection related repairing aur troubleshooting service available hai.
+</p>
+</details>
+
+<details>
+<summary>Price kaise pata karein?</summary>
+<p>
+Website ke Rate List ya Packages section me dekhein. Latest price ke liye WhatsApp par direct enquiry karein.
+</p>
+</details>
+
+</div>
+</div>
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews">
+
+<div class="container">
+
+<div class="title">
+<h2>Customer Reviews</h2>
+<p>Google par customer feedback dekhein</p>
+</div>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“CCTV installation aur service ke liye apna genuine customer review yahan add karein.”
+</p>
+<small>Customer Review</small>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Aapke Google Business Profile ke real reviews ko yahan feature kiya ja sakta hai.”
+</p>
+<small>Customer Review</small>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+“Real reviews use karna best hai—fake review website par nahi dikhaya gaya.”
+</p>
+<small>Customer Review</small>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:25px">
+
+<a class="btn mapbtn"
+href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut"
+target="_blank">
+⭐ View Google Business / Maps
+</a>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+<div class="container">
+
+<div class="title">
+<h2>Contact OM CCTV</h2>
+<p>Installation, repairing, DVR/NVR and service</p>
+</div>
+
+<div class="contact-wrap">
+
+<div class="contact-box">
+
+<h3>Get in Touch</h3>
+
+<div class="contact-line">
+📞 <b>Mobile:</b> 7060727266
+</div>
+
+<div class="contact-line">
+📍 <b>Address:</b> Daurala, Meerut, Uttar Pradesh
+</div>
+
+<div class="contact-line">
+🕐 <b>Timing:</b> 9:00 AM – 8:00 PM
+</div>
+
+<div class="contact-line">
+🛠️ <b>Work:</b> CCTV Installation, Repairing, DVR, NVR, Wiring & Maintenance
+</div>
+
+<div class="contact-buttons">
+
+<a class="btn primary"
+href="tel:+917060727266">
+📞 Call 7060727266
+</a>
+
+<a class="btn green"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%20CCTV%20Camera%20ki%20Price%20aur%20Details%20chahiye."
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="btn mapbtn"
+href="https://www.google.com/maps/search/?api=1&query=OM+CCTV+Camera+Repairing+Daurala+Meerut"
+target="_blank">
+🗺️ Directions
+</a>
+
+</div>
+</div>
+
+
+<div class="map-box">
+
+<h3>📍 Find Us on Google Maps</h3>
+
+<p style="color:#aaa">
+OM CCTV Camera Repairing, Daurala, Meerut
+</p>
+
+<iframe
+class="map-frame"
+src="https://www.google.com/maps?q=OM%20CCTV%20Camera%20Repairing%20Daurala%20Meerut&output=embed"
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+© 2026 OM CCTV Camera Repairing • Daurala, Meerut • CCTV Installation, Repairing & Service
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="float"
+href="https://wa.me/917060727266?text=Namaste%20%F0%9F%99%8F%20Mujhe%20CCTV%20Camera%20ki%20Price%20aur%20Details%20chahiye."
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+
+<script>
+
+let customerLocation = "";
+
+function getLocation() {
+    const status = document.getElementById("locationStatus");
+
+    if (!navigator.geolocation) {
+        status.textContent = "❌ Is browser me location support nahi hai.";
+        return;
+    }
+
+    status.textContent = "📍 Location li ja rahi hai...";
+
+    navigator.geolocation.getCurrentPosition(
+        function(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            customerLocation =
+                "https://www.google.com/maps?q=" + lat + "," + lng;
+
+            status.textContent = "✅ Current location ready hai.";
+        },
+        function(error) {
+            customerLocation = "";
+            status.textContent =
+                "❌ Location permission allow karein.";
+        },
+        {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+        }
+    );
+}
+
+function sendEnquiry(){
+
+    let name = document.getElementById("name").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let quantity = document.getElementById("quantity").value;
+    let type = document.getElementById("type").value;
+    let message = document.getElementById("message").value.trim();
+    let address = document.getElementById("address").value.trim();
+
+    if(name === ""){
+        alert("Please apna naam enter karein.");
+        return;
+    }
+
+    if(mobile === ""){
+        alert("Please mobile number enter karein.");
+        return;
+    }
+
+    if(type === ""){
+        alert("Please Camera Type / Service select karein.");
+        return;
+    }
+
+    let text =
+        "Namaste 🙏 OM CCTV,\n\n" +
+        "Mujhe CCTV ke baare mein enquiry karni hai.\n\n" +
+        "👤 Name: " + name + "\n" +
+        "📞 Mobile: " + mobile + "\n" +
+        "📹 Camera Quantity: " + (quantity || "Not selected") + "\n" +
+        "📷 Camera Type / Service: " + type + "\n" +
+        "📍 Customer Address: " + (address || "Address nahi diya") + "\n";
+
+    if(customerLocation !== ""){
+        text +=
+            "🗺️ Google Maps Location:\n" +
+            customerLocation + "\n";
+    }
+
+    text +=
+        "📝 Requirement: " +
+        (message || "Price aur details chahiye.") +
+        "\n\n" +
+        "Please mujhe price aur details bataiye.";
+
+    const whatsappUrl =
+        "https://wa.me/917060727266?text=" +
+        encodeURIComponent(text);
+
+    window.open(whatsappUrl, "_blank");
+}
+
+</script>
+
+</body>
+</html>
