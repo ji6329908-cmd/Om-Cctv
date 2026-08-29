@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="OM CCTV Products - Network Camera, DVR, NVR, WiFi Camera, PoE and CCTV accessories.">
+<title>OM CCTV Products | Daurala, Meerut</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#222}
+.nav{background:#080808;color:#fff;position:sticky;top:0;z-index:1000;border-bottom:3px solid #d6a928}
+.navin{max-width:1250px;margin:auto;min-height:76px;padding:9px 22px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:9px;font-size:27px;font-weight:800;white-space:nowrap}
+.brand img{width:58px;height:58px;object-fit:contain;border-radius:8px}
+.brand span{color:#d6a928}
+nav{display:flex;align-items:center;gap:20px}
+nav>a,.product-menu>a{color:#fff;text-decoration:none;font-size:15px;padding:27px 0}
+nav>a:hover,.product-menu>a:hover,nav>a.active,.product-menu>a.active{color:#d6a928}
+.product-menu{position:static}
+.mega-menu{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;color:#222;border-top:3px solid #d6a928;box-shadow:0 12px 25px #0002}
+.product-menu:hover .mega-menu,.product-menu:focus-within .mega-menu{display:block}
+.mega-inner{max-width:1250px;margin:auto;min-height:440px;display:grid;grid-template-columns:300px 1fr}
+.cat-list{padding:22px 16px;background:#fafafa;border-right:1px solid #ddd}
+.cat{display:block;width:100%;border:0;background:transparent;text-align:left;color:#333;padding:9px 10px;font-size:15px;cursor:pointer;border-radius:3px}
+.cat:hover,.cat.active{color:#b58a00;background:#f5f0df}
+.sub-area{padding:25px 35px}
+.sub-area h3{font-size:21px;margin-bottom:18px}
+.sub-grid{display:grid;grid-template-columns:repeat(3,minmax(150px,1fr));column-gap:45px;row-gap:14px}
+.sub-item{color:#333;text-decoration:none;font-size:15px;padding:3px 0}
+.sub-item:hover{color:#b58a00}
+.hero{background:linear-gradient(135deg,#111,#252525);color:#fff;padding:52px 20px;text-align:center}
+.hero h1{font-size:42px;margin-bottom:12px}
+.hero h1 span{color:#d6a928}
+.hero p{color:#ddd;font-size:17px}
+.container{max-width:1200px;margin:auto;padding:48px 20px;min-height:360px}
+.title{display:flex;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:25px}
+.title h2{font-size:30px}.title p{color:#666}
+.info-box{background:#fff;border:1px solid #ddd;border-radius:10px;padding:30px;box-shadow:0 5px 20px #00000010}
+.info-box h3{font-size:24px;margin-bottom:10px}.info-box p{color:#666}
+footer{background:#080808;color:#aaa;text-align:center;padding:22px;font-size:14px}
+@media(max-width:900px){
+ nav{gap:12px;flex-wrap:wrap}
+ nav>a,.product-menu>a{font-size:13px;padding:10px 0}
+ .mega-menu{top:112px}
+ .mega-inner{grid-template-columns:220px 1fr}
+ .sub-grid{grid-template-columns:repeat(2,minmax(120px,1fr));gap:12px}
+}
+@media(max-width:650px){
+ .navin{flex-direction:column;align-items:flex-start}
+ nav{width:100%;overflow-x:auto;padding-bottom:8px}
+ .mega-menu{position:fixed;top:120px;left:10px;right:10px;max-height:70vh;overflow:auto}
+ .mega-inner{grid-template-columns:1fr}
+ .cat-list{border-right:0;border-bottom:1px solid #ddd}
+ .sub-area{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="navin">
+    <div class="brand">
+      <img src="om-cctv-logo.png" alt="OM CCTV Logo">
+      <div><span>OM</span> CCTV</div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+
+      <div class="product-menu">
+        <a href="products.html" class="active">Products ▾</a>
+
+        <div class="mega-menu">
+          <div class="mega-inner">
+            <div class="cat-list">
+              <button class="cat active" data-key="network">Network Camera</button>
+              <button class="cat" data-key="nvr">Network Video Recorder (NVR)</button>
+              <button class="cat" data-key="analog">Analog HD Camera</button>
+              <button class="cat" data-key="dvr">Digital Video Recorder (DVR)</button>
+              <button class="cat" data-key="online">Online Products</button>
+              <button class="cat" data-key="illumax">Illumax</button>
+              <button class="cat" data-key="guard">Guard+</button>
+              <button class="cat" data-key="carkam">CarKam</button>
+              <button class="cat" data-key="ptz">Speed Dome (PTZ)</button>
+              <button class="cat" data-key="ezyhome">EzyHome</button>
+              <button class="cat" data-key="router">4G Router</button>
+              <button class="cat" data-key="doorphone">Video Door Phones</button>
+              <button class="cat" data-key="attendance">Time &amp; Attendance</button>
+              <button class="cat" data-key="mobile">Mobile Surveillance</button>
+            </div>
+
+            <div class="sub-area">
+              <h3 id="megaTitle">Sub Categories</h3>
+              <div id="megaItems" class="sub-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="rate.html">Rate</a>
+      <a href="packages.html">Packages</a>
+      <a href="customer-request.html">Customer Request</a>
+      <a href="customer-support.html">Customer Support</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main></main>
+
+<footer>
+  © 2026 OM CCTV Camera Repairing • Daurala, Meerut • CCTV Installation, Repairing &amp; Service
+</footer>
+
+<script>
+const menuData = {
+  network: ["2 MP","4 MP","5 MP","6 MP","8 MP"],
+  nvr: ["4 Ch.","8 Ch.","16 Ch.","32 Ch.","64 Ch.","128 Ch."],
+  analog: ["2.4 MP","5 MP"],
+  dvr: ["4 Ch.","8 Ch.","16 Ch.","32 Ch."],
+  online: ["Analog Wired Kit"],
+  illumax: ["Network","Analog"],
+  guard: ["Guard+"],
+  carkam: ["CarKam"],
+  ptz: ["Speed Dome (PTZ)"],
+  ezyhome: ["EzyHome"],
+  router: ["4G Router"],
+  doorphone: ["Video Door Phones"],
+  attendance: ["Time & Attendance"],
+  mobile: ["Mobile Surveillance"]
+};
+
+const cats = document.querySelectorAll(".cat");
+const items = document.getElementById("megaItems");
+
+function showMega(key, clickedCat) {
+  cats.forEach(c => c.classList.remove("active"));
+  if (clickedCat) clickedCat.classList.add("active");
+
+  items.innerHTML = menuData[key].map(item =>
+    `<a href="rate.html" class="sub-item">› ${item}</a>`
+  ).join("");
+}
+
+cats.forEach(cat => {
+  cat.addEventListener("mouseenter", () => showMega(cat.dataset.key, cat));
+  cat.addEventListener("click", () => showMega(cat.dataset.key, cat));
+});
+
+showMega("network", document.querySelector(".cat.active"));
+</script>
+
+</body>
+</html>
