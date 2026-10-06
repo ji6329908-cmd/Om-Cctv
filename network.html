@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All India CCTV Network | OM CCTV</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#08111f;color:#eef2ff}
+header{padding:18px 6%;background:#0e192b;border-bottom:1px solid #263750;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:24px;font-weight:800;color:#38bdf8}.back{color:#fff;text-decoration:none}
+.hero{padding:60px 7%;text-align:center;background:linear-gradient(135deg,#0b1730,#102b45)}
+.hero h1{font-size:clamp(34px,6vw,60px);margin:10px}.hero p{color:#cbd5e1;font-size:18px}
+.tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:25px auto;max-width:1100px}
+button,.btn{border:0;border-radius:9px;padding:12px 18px;background:#0ea5e9;color:#fff;font-weight:700;cursor:pointer;text-decoration:none}
+button.alt{background:#24344e}
+.section{max-width:1100px;margin:auto;padding:35px 6%}
+.search{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:10px;background:#111d31;padding:18px;border-radius:15px}
+input,select,textarea{width:100%;padding:13px;border-radius:8px;border:1px solid #34445f;background:#091321;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
+.card{background:#111d31;border:1px solid #293a56;border-radius:14px;padding:18px}
+.card h3{margin:8px 0}.badge{color:#67e8f9;font-size:13px}.meta{color:#b7c3d5;line-height:1.7;font-size:14px}
+.actions{display:flex;gap:8px;margin-top:14px}.actions a{flex:1;text-align:center;padding:10px;border-radius:8px;text-decoration:none;color:#fff;background:#0ea5e9}.actions .wa{background:#16a34a}
+form{max-width:800px;margin:auto;background:#111d31;padding:22px;border-radius:15px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}textarea{min-height:100px;margin:10px 0}
+.small{font-size:13px;color:#94a3b8}.empty{text-align:center;color:#94a3b8;padding:30px}
+@media(max-width:800px){.search,.two{grid-template-columns:1fr}.search button{padding:13px}.hero{padding:45px 5%}}
+</style>
+</head>
+<body>
+<header><div class="logo">OM CCTV</div><a class="back" href="index.html">← Main Website</a></header>
+<section class="hero">
+<h1>🇮🇳 All India CCTV Network</h1>
+<p>CCTV Engineer, Technician & Retailer को अपने शहर में खोजें।</p>
+</section>
+
+<div class="tabs">
+<button onclick="showTab('find')">🔎 Find Service</button>
+<button class="alt" onclick="showTab('register')">➕ Register as Engineer / Retailer</button>
+</div>
+
+<section class="section" id="find">
+<div class="search">
+<select id="type"><option value="">All</option><option>Engineer</option><option>Retailer</option></select>
+<input id="state" placeholder="State">
+<input id="city" placeholder="City">
+<input id="service" placeholder="Service / Product">
+<button onclick="searchPeople()">Search</button>
+</div>
+<div id="results" class="grid"></div>
+</section>
+
+<section class="section" id="register" style="display:none">
+<form id="form">
+<h2>Register Your CCTV Business</h2>
+<div class="two"><input id="name" required placeholder="Name / Business Name"><input id="phone" required placeholder="Mobile Number"></div>
+<div class="two"><select id="role" required><option value="">Type</option><option>Engineer</option><option>Retailer</option></select><input id="rstate" required placeholder="State"></div>
+<div class="two"><input id="rcity" required placeholder="City"><input id="rservice" required placeholder="Services / Products"></div>
+<textarea id="about" placeholder="About / Experience"></textarea>
+<button type="submit">Submit Registration</button>
+<p class="small">Demo version: details are saved only in this browser. For live use, connect a database and admin approval.</p>
+</form>
+</section>
+
+<script>
+const seed=[
+{name:"OM CCTV Service",phone:"7060727266",role:"Engineer",state:"Uttar Pradesh",city:"Meerut",service:"CCTV Installation, DVR/NVR, Repair",about:"CCTV installation and repair"},
+{name:"CCTV Dealer Demo",phone:"7060727266",role:"Retailer",state:"Uttar Pradesh",city:"Daurala",service:"CCTV Camera, DVR, NVR",about:"Retail and installation"}
+];
+let people=JSON.parse(localStorage.getItem("omNetworkPeople")||"null")||seed;
+const $=id=>document.getElementById(id);
+function esc(v){return String(v||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function card(p){let n=p.phone.replace(/\D/g,""), msg=encodeURIComponent("Namaste, mujhe CCTV service chahiye.");return `<div class="card"><span class="badge">${esc(p.role)}</span><h3>${esc(p.name)}</h3><div class="meta">📍 ${esc(p.city)}, ${esc(p.state)}<br>🛠️ ${esc(p.service)}<br>${esc(p.about)}</div><div class="actions"><a href="tel:${n}">📞 Call</a><a class="wa" target="_blank" href="https://wa.me/91${n}?text=${msg}">WhatsApp</a></div></div>`}
+function searchPeople(){let t=$("type").value.toLowerCase(),s=$("state").value.toLowerCase(),c=$("city").value.toLowerCase(),q=$("service").value.toLowerCase();let a=people.filter(p=>(!t||p.role.toLowerCase()==t)&&(!s||p.state.toLowerCase().includes(s))&&(!c||p.city.toLowerCase().includes(c))&&(!q||p.service.toLowerCase().includes(q)));$("results").innerHTML=a.length?a.map(card).join(""):'<div class="empty">No engineer / retailer found.</div>'}
+function showTab(t){$("find").style.display=t==="find"?"block":"none";$("register").style.display=t==="register"?"block":"none"}
+$("form").addEventListener("submit",e=>{e.preventDefault();people.push({name:$("name").value,phone:$("phone").value,role:$("role").value,state:$("rstate").value,city:$("rcity").value,service:$("rservice").value,about:$("about").value});localStorage.setItem("omNetworkPeople",JSON.stringify(people));e.target.reset();showTab("find");searchPeople();alert("Registration saved in this demo.")});
+searchPeople();
+</script>
+</body>
+</html>
